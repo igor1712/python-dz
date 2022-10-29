@@ -53,7 +53,7 @@ def calc(text):
 @bot.message_handler(commands=["comprehensive"])
 def handle_text(msg: telebot.types.Message):
         bot.send_message(msg.chat.id, text="Введите 2 комплексных числа, например"
-                                           " например: 23+25i - 6-24i (с пробелом между ними)")
+                                           " например: 12+16i - 2-26i (с пробелом между ними)")
         bot.register_next_step_handler(callback=viev_calc2, message=msg)
 
 
