@@ -2,7 +2,7 @@
 from telebot import *
 
 
-bot = TeleBot('5737130805:AAFr3wM8vizNewWNNuILEPD64PIr1bfrQqU')
+bot = TeleBot('TOKEN')
 
 
 
