@@ -78,10 +78,8 @@ def compreh(text):
     else:
         print('Неверный ввод')
 @bot.message_handler()
-def echo(msg: telebot.types.Message):
-    bot.send_message(msg.from_user.id, 'Я могу выполнять только одно действие '
-                                       'Введите 2 числа и действие между ними' )
-    bot.send_message(chat_id=msg.from_user.id, text=f'Result is: {calc(msg.text)}')
+def error(msg: telebot.types.Message): 
+    bot.send_message(msg.from_user.id, "Я могу выполнять только одно действие, сделайте свой выбор заново")
 
 
 bot.polling(none_stop=True)
